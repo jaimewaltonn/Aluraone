@@ -1,0 +1,50 @@
+<meta charset="UTF-8">
+<h1>PROGRAMA</h1>
+<script>
+    function saltarLinea() {
+    
+        document.write("<br>");    
+        document.write("<br>");    
+        document.write("<br>"); 
+    
+    }  
+    
+    function imprimir(frase) {
+
+        document.write(frase);
+        saltarLinea();
+    
+    }
+
+function calcularimc(peso1,altura1,nombre1,peso2,altura2,nombre2) {
+
+    imc1 = peso1 / (altura1 * altura1);
+    imc2 = peso2 / (altura2 * altura2);
+    imprimir("El promedio del imc calculado de " + nombre1 + " y " + nombre2 + " es " + (imc1+imc2)/2);
+
+}
+
+calcularimc(73,1.76,"Jaime",75,1.73,"Felipe");
+
+// pesoJaime = 73
+// alturaJaime = 1.76
+// imcJaime = pesoJaime / (alturaJaime * alturaJaime)
+// imcJaime = calcularimc(pesoJaime,alturaJaime)
+// imprimir("El IMC de Jaime es " + imcJaime)
+// calcularimc(73,1.76,"Jaime");
+
+
+// pesoFelipe = 75
+// alturaFelipe = 1.73
+// imcFelipe = pesoFelipe / (alturaFelipe * alturaFelipe)
+// imcFelipe = calcularimc(pesoFelipe,alturaFelipe)
+
+// imprimir("El IMC de Felipe es " + imcFelipe)
+// calcularimc(75,1.73,"Felipe");
+
+
+
+
+
+
+</script>
